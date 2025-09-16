@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.app-tagline {
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding-right: 40px; /* Space for the icon */
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888888;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #214eff;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.link-options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.forgotten-password {
+  font-size: 0.8em;
+}
+
