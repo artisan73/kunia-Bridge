@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1em;
+}
+
+.search-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon-button svg {
+  width: 20px;
+  height: 20px;
+  color: #555;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.filter-button.active {
+  background-color: #214eff;
+  color: #fff;
+  border-color: #214eff;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-item {
+  height: 80px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.fab-button {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #214eff;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.fab-button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.bottom-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-item svg {
+  color: #555;
+}
+
+.nav-label {
+  font-size: 0.7em;
+  color: #555;
+  margin-top: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 80px;
+}
