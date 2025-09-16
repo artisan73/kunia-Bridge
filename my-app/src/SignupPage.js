@@ -39,7 +39,7 @@ const SignupPage = () => {
         </form>
 
         <div className="login-link-container">
-          <p>Already have an account? <a href="#" className="login-link">Log In</a></p>
+          <p>Already have an account? <a href="" className="login-link">Log In</a></p>
         </div>
       </div>
     </div>
