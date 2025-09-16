@@ -1,7 +1,8 @@
 import React from 'react';
 import './Dashboard.css';
-
+import { Link } from "react-router-dom";
 import { FaUsers, FaShoppingCart, FaBook, FaHeartbeat } from 'react-icons/fa';
+
 
 const Dashboard = () => {
   return (
@@ -43,7 +44,9 @@ const Dashboard = () => {
       <nav className="bottom-navigation">
         <div className="nav-item">
           <FaUsers size={24} />
+          <Link to="/mentorship" className="flex items-center">
           <span className="nav-label">Mentorship</span>
+          </Link>
         </div>
         <div className="nav-item">
           <FaShoppingCart size={24} />
